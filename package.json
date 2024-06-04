@@ -1,0 +1,25 @@
+{
+  "name": "patas-mailer",
+  "version": "1.0.0",
+  "description": "A mailer to event patas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "dev": "dotenv -e .env.development -- node ./src/index.js",
+    "start": "dotenv -e .env.production -- node ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mysql/xdevapi": "^8.0.35",
+    "csv": "^6.3.6",
+    "emailjs": "^4.0.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "dotenv": "^16.3.1"
+  },
+  "type": "module"
+}
